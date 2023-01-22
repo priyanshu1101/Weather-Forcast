@@ -8,7 +8,7 @@ const app=express();
 app.use(bodyParser.urlencoded());
 
 // const port=process.env.PORT;
-const port=3000;
+const port=process.env.PORT || 3000;
 // app.get('/',function(req,res)
 // {
 //     var url="http://api.openweathermap.org/data/2.5/weather?q=janakpuri,Delhi,India&units=metric&appid=7a5f07b9155910978ac982a93820bf70";
